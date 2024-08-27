@@ -170,6 +170,12 @@ function markSlackLog(tab) {
                     markTextContent: 'Tabelog long sql 造成 DB timeout',
                     excelId: 24,
                 },
+                'Undefined index: reservationNo': {
+                    backgroundColor: safeColor,
+                    markTextColor: remarkColor,
+                    markTextContent: '已回報',
+                    excelId: 26,
+                },
             }
 
             function markInfo(text) {
