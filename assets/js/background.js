@@ -242,7 +242,6 @@ function markSlackLog(tab) {
                     }
                 }
 
-                console.log(text);
                 return {
                     backgroundColor: dangerColor,
                     markTextColor: remarkColor,
@@ -262,7 +261,6 @@ function markSlackLog(tab) {
                     const richTextSection = item.querySelector('div.p-rich_text_section');
                     if (richTextSection) {
                         let mark = markInfo(richTextSection.textContent);
-                        console.log(mark);
                         item.style.backgroundColor = mark.backgroundColor;
 
                         const newText = document.createElement('span');
